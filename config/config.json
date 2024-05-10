@@ -1,0 +1,35 @@
+{
+  "instanceName": "DEV",
+    "database": {
+      "host": "127.0.0.1",
+      "port": "3306",
+      "username": "usernameDB",
+      "password": "passwordDB",
+      "dbname": "MESSAGECHANNEL_api_v2"
+    },
+    "RedisCache":{
+      "host" :"127.0.0.1",
+      "port" : "6380",
+      "username" : "",
+      "password" : ""
+    },
+    "RedisQueue":{
+      "host" :"127.0.0.1",
+      "port" : "6380",
+      "username" : "",
+      "password" :""
+    },
+    "application" :{
+      "sourcequeue" :"WH_MESSAGE",
+      "producers" :"1",
+      "consumer" : "1",
+      "masterCacheKey" : "WA_CLT_DET_PHASE2_",
+      "waUsrMap" : "WA_USR_MAP_PHASE2",
+      "waPhNoMap" :"WA_PH_NO_MAP_PHASE2",
+      "chanlen" : "200",
+      "logPath":"./logs/",
+      "gcpBussinessLogic" :"true",
+      "webhookEventToSegregate" :["sent","delivered","read","failed"]
+    }
+  
+} 

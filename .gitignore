@@ -1,0 +1,8 @@
+#logs
+./logs/messagechannelBussinessLogic.log
+
+#Main 
+main
+
+#logs 
+logs/messagechannelBussinessLogic*.log
